@@ -1,0 +1,137 @@
+body {
+    background-color: #F9F8F8;
+    margin: 0px;
+}
+
+nav {
+    width: calc(100% - 50px);
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+    background-color: #BBB5BD;//rgb(0,0,0,0.25);
+    z-index: 9;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);    
+}
+
+.logo {
+    width: 127px;
+    height: 27px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+}
+
+.burger {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    margin: 20px 25px 0px 0px;
+    background-size: cover;
+    background-image: url(../img/menu.png);
+    
+    cursor: pointer;
+    display: block;
+}
+
+input[type="checkbox"]  {
+    display: none;
+}
+
+input + .burger + div {
+    display: none;
+}
+
+input:checked + .burger + div {
+    display:block;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    padding: 10px 10px 10px 0px;
+    display: none;
+    background-color: #BBB5BD;   
+}
+
+.menu-section {
+    font-family: MS Sans Serif;
+    color: #B118C8;
+    font-size: 22px;
+    margin: 10px 20px 10px 20px;
+}
+
+.speclink{
+    color: #B118C8;
+    text-decoration: none;
+}
+
+.container{
+    width: calc(100% - 50px);
+    margin: auto;
+    padding: 25px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;    
+    //margin: 8%;
+}
+
+.headerrr{
+    width: calc(100% - 50px);        
+    height: 100px;    
+    background-color: #9F87AF;
+    font-family: MS Sans Serif;
+    font-size: 25px;
+    margin-top: 15%;    
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text{
+    font-family: MS Sans Serif;
+    font-size: 20px;
+}
+
+.video{
+    flex: 1 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;   
+    justify-content: center;
+}
+
+.video iframe{
+    margin:1rem;
+    width: 99%;
+}
+
+.gallery2{
+    display: flex;
+    flex: 1 0 45%;
+    flex-wrap: wrap;
+    margin: 10px;   
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 0 20%;
+    display: flex;
+    margin: 1rem;
+    width:560px;
+    height:315px;
+}
+
+
+.gallery-item2 {    
+    margin: 1rem;
+    width: 25%;  
+    transition: transform 400ms ease-out;
+}
+.gallery-item2:hover{
+    transform: scale(1.25);
+}

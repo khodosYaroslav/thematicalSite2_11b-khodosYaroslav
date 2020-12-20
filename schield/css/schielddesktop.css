@@ -1,0 +1,118 @@
+body{
+    background-color: #F9F8F8;
+}
+
+.nav{
+    width: calc(100% - 50px);
+    position: relative;
+    padding: 25px 25px 10px 25px;
+    position: fixed;
+    background-color: rgb(0,0,0,0.25);
+    z-index: 9;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.logo{
+    width: 254px;
+    height: 54px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+}
+
+.menu{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    padding: 0px 25px 0px 0px;
+}
+
+.burger{
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.menu-section{
+    font-family: MS Sans Serif;
+    color: #B118C8;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0px 0px 0px 50px;
+}
+
+.speclink{
+    color: #B118C8;
+    text-decoration: none;
+}
+
+.headerrr{
+    width: calc(100% - 50px);        
+    height: 120px;        
+    background-color: #9F87AF;
+    font-family: MS Sans Serif;
+    font-size: 25px;
+    margin-top: 2%;    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.container{
+    max-width: calc(100% - 50px);
+    margin: auto;    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.video{
+    flex: 1 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;   
+    justify-content: center;
+}
+
+.video iframe{
+    margin:1rem;
+    width: 45%;
+}
+
+.gallery2{
+    display: flex;
+    flex: 1 0 30%;
+    flex-wrap: wrap;
+    margin: 10px;   
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 0 20%;
+    display: flex;
+    margin: 1rem;
+    width:560px;
+    height:315px;
+}
+
+
+.gallery-item2 {    
+    margin: 1rem;
+    width: 25%;  
+    transition: transform 400ms ease-out;
+}
+.gallery-item2:hover{
+    transform: scale(1.15);
+}
+
+.text{
+    font-family: MS Sans Serif;
+    font-size: 20px;
+}

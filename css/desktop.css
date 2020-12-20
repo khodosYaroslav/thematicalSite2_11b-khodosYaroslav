@@ -1,0 +1,138 @@
+body{
+    background-color: #F9F8F8;
+}
+
+.nav{
+    width: calc(100% - 50px);
+    position: relative;
+    padding: 25px 25px 10px 25px;
+    position: fixed;
+    background-color: rgb(0,0,0,0.25);
+    z-index: 9;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.logo{
+    width: 254px;
+    height: 54px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+}
+
+.menu{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    padding: 0px 25px 0px 0px;
+}
+
+.burger{
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.menu-section{
+    font-family: MS Sans Serif;
+    color: #B118C8;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0px 0px 0px 50px;
+}
+
+.speclink{
+    color: #B118C8;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.gallery1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.gallery-item {
+    flex: 1 0 40%;
+    display: flex;
+    margin: 1rem;
+    //box-shadow: 10px 10px 10px #AA6DA3;    
+    margin-left: 2%;
+    margin-top: 3%;    
+    border-radius: 20px 40px 20px 40px;
+    transition:all 0.55s;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #AA6DA3;
+}
+
+.gallery-item:hover{
+    box-shadow: 10px 10px 10px #AA6DA3;    
+}
+
+.gallery-image {  
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 1%;    
+    border-radius: 20px 40px 20px 40px;
+}
+
+.bar{
+    background-color: #B185A7;
+    display: flex;
+    padding-right: 5px;
+    flex: 1 0 40%;
+    font-family: MS Sans Serif;
+    font-size: 18px;
+    justify-content: flex-end;
+}
+.bar p{
+    color: #E8DBC5;
+}
+.barst{
+    width: 99%;
+}
+
+.barhead{
+    font-family: MS Sans Serif;
+    font-size: 18px;
+    margin-top: 3%;
+    color: #383961;
+}
+
+.barhead01{
+    font-family: MS Sans Serif;
+    font-size: 18px;
+    margin-top: 1%;
+    color: #383961;
+}
+
+/*.gallery-image:hover {
+    transform: scale(1.05);
+}*/
+.txtblockhead{
+    font-family: MS Sans Serif;
+    font-size: 18px;
+    text-align: center;        
+}
+.txtblock{
+    font-family: MS Sans Serif;
+    font-size: 16px;            
+    margin: 1%;
+}
